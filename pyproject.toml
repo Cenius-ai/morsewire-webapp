@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "morsewire"
+version = "1.0.0"
+description = "Morse code copy drill for the terminal: ramp the speed, score the copy, keep the history."
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{ name = "MorseWire" }]
+keywords = ["morse", "cw", "amateur-radio", "drill", "cli"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Education",
+]
+dependencies = []
+
+[project.scripts]
+morsewire = "morsewire:main"
+
+[tool.setuptools]
+py-modules = ["morsewire"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

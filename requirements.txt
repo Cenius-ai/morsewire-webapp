@@ -1,0 +1,3 @@
+# MorseWire itself is standard-library only — nothing here is needed to run it.
+# This pin exists so the test suite is reproducible.
+pytest==8.3.3

@@ -1,0 +1,19 @@
+# byte-compiled / packaging
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# test artifacts
+.pytest_cache/
+.coverage
+
+# local environment
+.env
+.venv/
+venv/
+
+# drill history stays in ~/.morsewire/ — never commit a stray copy
+history.jsonl
